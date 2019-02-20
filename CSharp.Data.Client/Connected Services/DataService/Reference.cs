@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 16/02/2019 01:44:53
+// Generation date: 19/02/2019 15:52:51
 namespace Data.Models
 {
     /// <summary>
@@ -2132,6 +2132,7 @@ namespace Default
       <Action Name=""BulkInsert"" IsBound=""true"">
         <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Exam)"" />
         <Parameter Name=""Exams"" Type=""Collection(Data.Models.Exam)"" />
+        <ReturnType Type=""Collection(Data.Models.Exam)"" />
       </Action>
       <Action Name=""BulkInsertByName"" IsBound=""true"">
         <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Group)"" />
@@ -2196,14 +2197,14 @@ namespace Default
         /// <summary>
         /// There are no comments for BulkInsert in the schema.
         /// </summary>
-        public static global::Microsoft.OData.Client.DataServiceActionQuery BulkInsert(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> source, global::System.Collections.Generic.ICollection<global::Data.Models.Exam> Exams)
+        public static global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Exam> BulkInsert(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> source, global::System.Collections.Generic.ICollection<global::Data.Models.Exam> Exams)
         {
             if (!source.IsComposable)
             {
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(source.Context, source.AppendRequestUri("BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Exams", Exams));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Exam>(source.Context, source.AppendRequestUri("BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Exams", Exams));
         }
         /// <summary>
         /// There are no comments for BulkInsertByName in the schema.
