@@ -18,12 +18,12 @@
             }
         }
 
-        public static DictionaryTree<Group, Y> ToDictionaryTree<Y>(this DataServiceQuery<Group> groupsDb, Func<Group, Y> getKey, Group rootGroup = null) where Y : class
+        public static DictionaryTree<Group, Y> ToDictionaryTree<Y>(this DataServiceQuery<Group> groupsDb, Func<Group, Y> getKey, Guid rootGroupId) where Y : class
         {
             var groups = groupsDb.ToList();
-            var rootGroups = groups.Where(g => g.ParentId == rootGroup?.Id).ToList();
-            var root = new DictionaryTree<Group, Y>(getKey, rootGroup);
-            groups.CastListToDictionaryTree(root, rootGroups);
+            var childsGroups = groups.Where(g => g.ParentId == rootGroupId).ToList();
+            var root = new DictionaryTree<Group, Y>(getKey, null);
+            groups.CastListToDictionaryTree(root, childsGroups);
             return root;
         }
     }

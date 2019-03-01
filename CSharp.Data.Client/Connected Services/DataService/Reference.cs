@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 19/02/2019 15:52:51
+// Generation date: 28/02/2019 22:35:55
 namespace Data.Models
 {
     /// <summary>
@@ -2136,7 +2136,8 @@ namespace Default
       </Action>
       <Action Name=""BulkInsertByName"" IsBound=""true"">
         <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Group)"" />
-        <Parameter Name=""Groups"" Type=""Data.Controllers.GroupNameTree"" />
+        <Parameter Name=""NewGroups"" Type=""Data.Controllers.GroupNameTree"" />
+        <Parameter Name=""RootPath"" Type=""Collection(Edm.String)"" />
         <ReturnType Type=""Collection(Data.Models.Group)"" />
       </Action>
       <EntityContainer Name=""Container"">
@@ -2204,19 +2205,20 @@ namespace Default
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Exam>(source.Context, source.AppendRequestUri("BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Exams", Exams));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Exam>(source.Context, source.AppendRequestUri("Default.BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Exams", Exams));
         }
         /// <summary>
         /// There are no comments for BulkInsertByName in the schema.
         /// </summary>
-        public static global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Group> BulkInsertByName(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source, global::Data.Controllers.GroupNameTree Groups)
+        public static global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Group> BulkInsertByName(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source, global::Data.Controllers.GroupNameTree NewGroups, global::System.Collections.Generic.ICollection<string> RootPath)
         {
             if (!source.IsComposable)
             {
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Group>(source.Context, source.AppendRequestUri("Default.BulkInsertByName"), new global::Microsoft.OData.Client.BodyOperationParameter("Groups", Groups));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Group>(source.Context, source.AppendRequestUri("Default.BulkInsertByName"), new global::Microsoft.OData.Client.BodyOperationParameter("NewGroups", NewGroups),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("RootPath", RootPath));
         }
     }
 }
