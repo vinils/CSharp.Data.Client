@@ -2,9 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class DictionaryTree<T, Y> : Dictionary<Y, DictionaryTree<T, Y>> where Y : class
     {
@@ -60,6 +57,17 @@
                 }
                 return lastDictionary;
             }
+        }
+
+        public void Add(T data)
+            => New(data);
+
+        public void Add(DictionaryTree<T, Y> dictionaryTree)
+        {
+            if (dictionaryTree.Parent != this)
+                throw new ArgumentException("Not in the same parent");
+
+            this.Add(getKey(dictionaryTree.Data), dictionaryTree);
         }
 
         public bool ContainsKey(T data)
