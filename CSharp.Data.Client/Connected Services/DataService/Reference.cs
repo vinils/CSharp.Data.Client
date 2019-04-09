@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 28/02/2019 22:35:55
+// Generation date: 09/04/2019 01:21:44
 namespace Data.Models
 {
     /// <summary>
@@ -56,10 +56,10 @@ namespace Data.Models
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         private global::Data.Models.GroupSingle _Parent;
         /// <summary>
-        /// There are no comments for Exams in the schema.
+        /// There are no comments for Datas in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> Exams
+        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> Datas
         {
             get
             {
@@ -67,15 +67,15 @@ namespace Data.Models
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Exams == null))
+                if ((this._Datas == null))
                 {
-                    this._Exams = Context.CreateQuery<global::Data.Models.Exam>(GetPath("Exams"));
+                    this._Datas = Context.CreateQuery<global::Data.Models.Data>(GetPath("Datas"));
                 }
-                return this._Exams;
+                return this._Datas;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> _Exams;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> _Datas;
         /// <summary>
         /// There are no comments for Childs in the schema.
         /// </summary>
@@ -274,27 +274,27 @@ namespace Data.Models
         partial void OnParentChanging(global::Data.Models.Group value);
         partial void OnParentChanged();
         /// <summary>
-        /// There are no comments for Property Exams in the schema.
+        /// There are no comments for Property Datas in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Exam> Exams
+        public global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> Datas
         {
             get
             {
-                return this._Exams;
+                return this._Datas;
             }
             set
             {
-                this.OnExamsChanging(value);
-                this._Exams = value;
-                this.OnExamsChanged();
-                this.OnPropertyChanged("Exams");
+                this.OnDatasChanging(value);
+                this._Datas = value;
+                this.OnDatasChanged();
+                this.OnPropertyChanged("Datas");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Exam> _Exams = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Exam>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnExamsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Exam> value);
-        partial void OnExamsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> _Datas = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDatasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> value);
+        partial void OnDatasChanged();
         /// <summary>
         /// There are no comments for Property Childs in the schema.
         /// </summary>
@@ -358,26 +358,26 @@ namespace Data.Models
         }
     }
     /// <summary>
-    /// There are no comments for ExamSingle in the schema.
+    /// There are no comments for DataSingle in the schema.
     /// </summary>
-    public partial class ExamSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Exam>
+    public partial class DataSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Data>
     {
         /// <summary>
-        /// Initialize a new ExamSingle object.
+        /// Initialize a new DataSingle object.
         /// </summary>
-        public ExamSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+        public DataSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
             : base(context, path) {}
 
         /// <summary>
-        /// Initialize a new ExamSingle object.
+        /// Initialize a new DataSingle object.
         /// </summary>
-        public ExamSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+        public DataSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
             : base(context, path, isComposable) {}
 
         /// <summary>
-        /// Initialize a new ExamSingle object.
+        /// Initialize a new DataSingle object.
         /// </summary>
-        public ExamSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Exam> query)
+        public DataSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Data> query)
             : base(query) {}
 
         /// <summary>
@@ -403,14 +403,14 @@ namespace Data.Models
         private global::Data.Models.GroupSingle _Group;
     }
     /// <summary>
-    /// There are no comments for Exam in the schema.
+    /// There are no comments for Data in the schema.
     /// </summary>
     /// <KeyProperties>
     /// GroupId
     /// CollectionDate
     /// </KeyProperties>
     [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
-    public abstract partial class Exam : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    public abstract partial class Data : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
         /// There are no comments for Property GroupId in the schema.
@@ -497,26 +497,26 @@ namespace Data.Models
         }
     }
     /// <summary>
-    /// There are no comments for ExamDecimalSingle in the schema.
+    /// There are no comments for DataDecimalSingle in the schema.
     /// </summary>
-    public partial class ExamDecimalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ExamDecimal>
+    public partial class DataDecimalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DataDecimal>
     {
         /// <summary>
-        /// Initialize a new ExamDecimalSingle object.
+        /// Initialize a new DataDecimalSingle object.
         /// </summary>
-        public ExamDecimalSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+        public DataDecimalSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
             : base(context, path) {}
 
         /// <summary>
-        /// Initialize a new ExamDecimalSingle object.
+        /// Initialize a new DataDecimalSingle object.
         /// </summary>
-        public ExamDecimalSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+        public DataDecimalSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
             : base(context, path, isComposable) {}
 
         /// <summary>
-        /// Initialize a new ExamDecimalSingle object.
+        /// Initialize a new DataDecimalSingle object.
         /// </summary>
-        public ExamDecimalSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ExamDecimal> query)
+        public DataDecimalSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DataDecimal> query)
             : base(query) {}
 
         /// <summary>
@@ -563,27 +563,27 @@ namespace Data.Models
         private global::Data.Models.GroupSingle _Group;
     }
     /// <summary>
-    /// There are no comments for ExamDecimal in the schema.
+    /// There are no comments for DataDecimal in the schema.
     /// </summary>
     /// <KeyProperties>
     /// GroupId
     /// CollectionDate
     /// </KeyProperties>
     [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
-    public partial class ExamDecimal : Exam
+    public partial class DataDecimal : Data
     {
         /// <summary>
-        /// Create a new ExamDecimal object.
+        /// Create a new DataDecimal object.
         /// </summary>
         /// <param name="collectionDate">Initial value of CollectionDate.</param>
         /// <param name="decimalValue">Initial value of DecimalValue.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static ExamDecimal CreateExamDecimal(global::System.DateTimeOffset collectionDate, decimal decimalValue)
+        public static DataDecimal CreateDataDecimal(global::System.DateTimeOffset collectionDate, decimal decimalValue)
         {
-            ExamDecimal examDecimal = new ExamDecimal();
-            examDecimal.CollectionDate = collectionDate;
-            examDecimal.DecimalValue = decimalValue;
-            return examDecimal;
+            DataDecimal dataDecimal = new DataDecimal();
+            dataDecimal.CollectionDate = collectionDate;
+            dataDecimal.DecimalValue = decimalValue;
+            return dataDecimal;
         }
         /// <summary>
         /// There are no comments for Property DecimalValue in the schema.
@@ -654,10 +654,10 @@ namespace Data.Models
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Exam in the schema.
+        /// There are no comments for Data in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.ExamDecimalSingle Exam
+        public global::Data.Models.DataDecimalSingle Data
         {
             get
             {
@@ -665,15 +665,15 @@ namespace Data.Models
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Exam == null))
+                if ((this._Data == null))
                 {
-                    this._Exam = new global::Data.Models.ExamDecimalSingle(this.Context, GetPath("Exam"));
+                    this._Data = new global::Data.Models.DataDecimalSingle(this.Context, GetPath("Data"));
                 }
-                return this._Exam;
+                return this._Data;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.ExamDecimalSingle _Exam;
+        private global::Data.Models.DataDecimalSingle _Data;
     }
     /// <summary>
     /// There are no comments for LimitDecimalDenormalized in the schema.
@@ -862,27 +862,27 @@ namespace Data.Models
         partial void OnColorChanging(global::System.Nullable<int> value);
         partial void OnColorChanged();
         /// <summary>
-        /// There are no comments for Property Exam in the schema.
+        /// There are no comments for Property Data in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.ExamDecimal Exam
+        public global::Data.Models.DataDecimal Data
         {
             get
             {
-                return this._Exam;
+                return this._Data;
             }
             set
             {
-                this.OnExamChanging(value);
-                this._Exam = value;
-                this.OnExamChanged();
-                this.OnPropertyChanged("Exam");
+                this.OnDataChanging(value);
+                this._Data = value;
+                this.OnDataChanged();
+                this.OnPropertyChanged("Data");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.ExamDecimal _Exam;
-        partial void OnExamChanging(global::Data.Models.ExamDecimal value);
-        partial void OnExamChanged();
+        private global::Data.Models.DataDecimal _Data;
+        partial void OnDataChanging(global::Data.Models.DataDecimal value);
+        partial void OnDataChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -925,10 +925,10 @@ namespace Data.Models
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Exam in the schema.
+        /// There are no comments for Data in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.ExamStringSingle Exam
+        public global::Data.Models.DataStringSingle Data
         {
             get
             {
@@ -936,15 +936,15 @@ namespace Data.Models
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Exam == null))
+                if ((this._Data == null))
                 {
-                    this._Exam = new global::Data.Models.ExamStringSingle(this.Context, GetPath("Exam"));
+                    this._Data = new global::Data.Models.DataStringSingle(this.Context, GetPath("Data"));
                 }
-                return this._Exam;
+                return this._Data;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.ExamStringSingle _Exam;
+        private global::Data.Models.DataStringSingle _Data;
     }
     /// <summary>
     /// There are no comments for LimitStringDenormalized in the schema.
@@ -1045,27 +1045,27 @@ namespace Data.Models
         partial void OnColorChanging(global::System.Nullable<int> value);
         partial void OnColorChanged();
         /// <summary>
-        /// There are no comments for Property Exam in the schema.
+        /// There are no comments for Property Data in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.ExamString Exam
+        public global::Data.Models.DataString Data
         {
             get
             {
-                return this._Exam;
+                return this._Data;
             }
             set
             {
-                this.OnExamChanging(value);
-                this._Exam = value;
-                this.OnExamChanged();
-                this.OnPropertyChanged("Exam");
+                this.OnDataChanging(value);
+                this._Data = value;
+                this.OnDataChanged();
+                this.OnPropertyChanged("Data");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.ExamString _Exam;
-        partial void OnExamChanging(global::Data.Models.ExamString value);
-        partial void OnExamChanged();
+        private global::Data.Models.DataString _Data;
+        partial void OnDataChanging(global::Data.Models.DataString value);
+        partial void OnDataChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -1085,26 +1085,26 @@ namespace Data.Models
         }
     }
     /// <summary>
-    /// There are no comments for ExamStringSingle in the schema.
+    /// There are no comments for DataStringSingle in the schema.
     /// </summary>
-    public partial class ExamStringSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ExamString>
+    public partial class DataStringSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DataString>
     {
         /// <summary>
-        /// Initialize a new ExamStringSingle object.
+        /// Initialize a new DataStringSingle object.
         /// </summary>
-        public ExamStringSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+        public DataStringSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
             : base(context, path) {}
 
         /// <summary>
-        /// Initialize a new ExamStringSingle object.
+        /// Initialize a new DataStringSingle object.
         /// </summary>
-        public ExamStringSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+        public DataStringSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
             : base(context, path, isComposable) {}
 
         /// <summary>
-        /// Initialize a new ExamStringSingle object.
+        /// Initialize a new DataStringSingle object.
         /// </summary>
-        public ExamStringSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ExamString> query)
+        public DataStringSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DataString> query)
             : base(query) {}
 
         /// <summary>
@@ -1151,27 +1151,27 @@ namespace Data.Models
         private global::Data.Models.GroupSingle _Group;
     }
     /// <summary>
-    /// There are no comments for ExamString in the schema.
+    /// There are no comments for DataString in the schema.
     /// </summary>
     /// <KeyProperties>
     /// GroupId
     /// CollectionDate
     /// </KeyProperties>
     [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
-    public partial class ExamString : Exam
+    public partial class DataString : Data
     {
         /// <summary>
-        /// Create a new ExamString object.
+        /// Create a new DataString object.
         /// </summary>
         /// <param name="collectionDate">Initial value of CollectionDate.</param>
         /// <param name="stringValue">Initial value of StringValue.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static ExamString CreateExamString(global::System.DateTimeOffset collectionDate, string stringValue)
+        public static DataString CreateDataString(global::System.DateTimeOffset collectionDate, string stringValue)
         {
-            ExamString examString = new ExamString();
-            examString.CollectionDate = collectionDate;
-            examString.StringValue = stringValue;
-            return examString;
+            DataString dataString = new DataString();
+            dataString.CollectionDate = collectionDate;
+            dataString.StringValue = stringValue;
+            return dataString;
         }
         /// <summary>
         /// There are no comments for Property StringValue in the schema.
@@ -1523,21 +1523,21 @@ namespace Data.Models
             return new global::Data.Models.GroupSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Data.Models.Exam as global::Data.Models.ExamSingle specified by key from an entity set
+        /// Get an entity of type global::Data.Models.Data as global::Data.Models.DataSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.ExamSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.DataSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> source, global::System.Collections.Generic.Dictionary<string, object> keys)
         {
-            return new global::Data.Models.ExamSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+            return new global::Data.Models.DataSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Data.Models.Exam as global::Data.Models.ExamSingle specified by key from an entity set
+        /// Get an entity of type global::Data.Models.Data as global::Data.Models.DataSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
-        public static global::Data.Models.ExamSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> source,
+        public static global::Data.Models.DataSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> source,
             global::System.Nullable<global::System.Guid> groupId, 
             global::System.DateTimeOffset collectionDate)
         {
@@ -1546,24 +1546,24 @@ namespace Data.Models
                 { "GroupId", groupId }, 
                 { "CollectionDate", collectionDate }
             };
-            return new global::Data.Models.ExamSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+            return new global::Data.Models.DataSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Data.Models.ExamDecimal as global::Data.Models.ExamDecimalSingle specified by key from an entity set
+        /// Get an entity of type global::Data.Models.DataDecimal as global::Data.Models.DataDecimalSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.ExamDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.ExamDecimal> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.DataDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> source, global::System.Collections.Generic.Dictionary<string, object> keys)
         {
-            return new global::Data.Models.ExamDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+            return new global::Data.Models.DataDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Data.Models.ExamDecimal as global::Data.Models.ExamDecimalSingle specified by key from an entity set
+        /// Get an entity of type global::Data.Models.DataDecimal as global::Data.Models.DataDecimalSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
-        public static global::Data.Models.ExamDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.ExamDecimal> source,
+        public static global::Data.Models.DataDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> source,
             global::System.Nullable<global::System.Guid> groupId, 
             global::System.DateTimeOffset collectionDate)
         {
@@ -1572,16 +1572,16 @@ namespace Data.Models
                 { "GroupId", groupId }, 
                 { "CollectionDate", collectionDate }
             };
-            return new global::Data.Models.ExamDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+            return new global::Data.Models.DataDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Cast an entity of type global::Data.Models.Exam to its derived type global::Data.Models.ExamDecimal
+        /// Cast an entity of type global::Data.Models.Data to its derived type global::Data.Models.DataDecimal
         /// </summary>
         /// <param name="source">source entity</param>
-        public static global::Data.Models.ExamDecimalSingle CastToExamDecimal(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.Exam> source)
+        public static global::Data.Models.DataDecimalSingle CastToDataDecimal(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.Data> source)
         {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.ExamDecimal> query = source.CastTo<global::Data.Models.ExamDecimal>();
-            return new global::Data.Models.ExamDecimalSingle(source.Context, query.GetPath(null));
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.DataDecimal> query = source.CastTo<global::Data.Models.DataDecimal>();
+            return new global::Data.Models.DataDecimalSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::Data.Models.LimitDecimalDenormalized as global::Data.Models.LimitDecimalDenormalizedSingle specified by key from an entity set
@@ -1636,21 +1636,21 @@ namespace Data.Models
             return new global::Data.Models.LimitStringDenormalizedSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Data.Models.ExamString as global::Data.Models.ExamStringSingle specified by key from an entity set
+        /// Get an entity of type global::Data.Models.DataString as global::Data.Models.DataStringSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.ExamStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.ExamString> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.DataStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataString> source, global::System.Collections.Generic.Dictionary<string, object> keys)
         {
-            return new global::Data.Models.ExamStringSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+            return new global::Data.Models.DataStringSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Data.Models.ExamString as global::Data.Models.ExamStringSingle specified by key from an entity set
+        /// Get an entity of type global::Data.Models.DataString as global::Data.Models.DataStringSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
-        public static global::Data.Models.ExamStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.ExamString> source,
+        public static global::Data.Models.DataStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataString> source,
             global::System.Nullable<global::System.Guid> groupId, 
             global::System.DateTimeOffset collectionDate)
         {
@@ -1659,16 +1659,16 @@ namespace Data.Models
                 { "GroupId", groupId }, 
                 { "CollectionDate", collectionDate }
             };
-            return new global::Data.Models.ExamStringSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+            return new global::Data.Models.DataStringSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
         /// <summary>
-        /// Cast an entity of type global::Data.Models.Exam to its derived type global::Data.Models.ExamString
+        /// Cast an entity of type global::Data.Models.Data to its derived type global::Data.Models.DataString
         /// </summary>
         /// <param name="source">source entity</param>
-        public static global::Data.Models.ExamStringSingle CastToExamString(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.Exam> source)
+        public static global::Data.Models.DataStringSingle CastToDataString(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.Data> source)
         {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.ExamString> query = source.CastTo<global::Data.Models.ExamString>();
-            return new global::Data.Models.ExamStringSingle(source.Context, query.GetPath(null));
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.DataString> query = source.CastTo<global::Data.Models.DataString>();
+            return new global::Data.Models.DataStringSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::Data.Models.LimitDecimal as global::Data.Models.LimitDecimalSingle specified by key from an entity set
@@ -1703,6 +1703,73 @@ namespace Data.Models
 }
 namespace Data.Controllers
 {
+    /// <summary>
+    /// There are no comments for GroupDictionaryByName in the schema.
+    /// </summary>
+    public partial class GroupDictionaryByName : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Keys in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> Keys
+        {
+            get
+            {
+                return this._Keys;
+            }
+            set
+            {
+                this.OnKeysChanging(value);
+                this._Keys = value;
+                this.OnKeysChanged();
+                this.OnPropertyChanged("Keys");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _Keys = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnKeysChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnKeysChanged();
+        /// <summary>
+        /// There are no comments for Property Values in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName> Values
+        {
+            get
+            {
+                return this._Values;
+            }
+            set
+            {
+                this.OnValuesChanging(value);
+                this._Values = value;
+                this.OnValuesChanged();
+                this.OnPropertyChanged("Values");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName> _Values = new global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName>();
+        partial void OnValuesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName> value);
+        partial void OnValuesChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
     /// <summary>
     /// There are no comments for GroupNameTreeSingle in the schema.
     /// </summary>
@@ -1908,39 +1975,39 @@ namespace Default
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> _Groups;
         /// <summary>
-        /// There are no comments for Exams in the schema.
+        /// There are no comments for Datas in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> Exams
+        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> Datas
         {
             get
             {
-                if ((this._Exams == null))
+                if ((this._Datas == null))
                 {
-                    this._Exams = base.CreateQuery<global::Data.Models.Exam>("Exams");
+                    this._Datas = base.CreateQuery<global::Data.Models.Data>("Datas");
                 }
-                return this._Exams;
+                return this._Datas;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> _Exams;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> _Datas;
         /// <summary>
-        /// There are no comments for ExamDecimals in the schema.
+        /// There are no comments for DataDecimals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.ExamDecimal> ExamDecimals
+        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> DataDecimals
         {
             get
             {
-                if ((this._ExamDecimals == null))
+                if ((this._DataDecimals == null))
                 {
-                    this._ExamDecimals = base.CreateQuery<global::Data.Models.ExamDecimal>("ExamDecimals");
+                    this._DataDecimals = base.CreateQuery<global::Data.Models.DataDecimal>("DataDecimals");
                 }
-                return this._ExamDecimals;
+                return this._DataDecimals;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.ExamDecimal> _ExamDecimals;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> _DataDecimals;
         /// <summary>
         /// There are no comments for LimitDecimalDenormalizeds in the schema.
         /// </summary>
@@ -1984,20 +2051,20 @@ namespace Default
             base.AddObject("Groups", group);
         }
         /// <summary>
-        /// There are no comments for Exams in the schema.
+        /// There are no comments for Datas in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToExams(global::Data.Models.Exam exam)
+        public void AddToDatas(global::Data.Models.Data data)
         {
-            base.AddObject("Exams", exam);
+            base.AddObject("Datas", data);
         }
         /// <summary>
-        /// There are no comments for ExamDecimals in the schema.
+        /// There are no comments for DataDecimals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToExamDecimals(global::Data.Models.ExamDecimal examDecimal)
+        public void AddToDataDecimals(global::Data.Models.DataDecimal dataDecimal)
         {
-            base.AddObject("ExamDecimals", examDecimal);
+            base.AddObject("DataDecimals", dataDecimal);
         }
         /// <summary>
         /// There are no comments for LimitDecimalDenormalizeds in the schema.
@@ -2036,11 +2103,11 @@ namespace Default
         <NavigationProperty Name=""Parent"" Type=""Data.Models.Group"">
           <ReferentialConstraint Property=""ParentId"" ReferencedProperty=""Id"" />
         </NavigationProperty>
-        <NavigationProperty Name=""Exams"" Type=""Collection(Data.Models.Exam)"" />
+        <NavigationProperty Name=""Datas"" Type=""Collection(Data.Models.Data)"" />
         <NavigationProperty Name=""Childs"" Type=""Collection(Data.Models.Group)"" />
         <NavigationProperty Name=""LimitDecimals"" Type=""Collection(Data.Models.LimitDecimal)"" />
       </EntityType>
-      <EntityType Name=""Exam"" Abstract=""true"">
+      <EntityType Name=""Data"" Abstract=""true"">
         <Key>
           <PropertyRef Name=""GroupId"" />
           <PropertyRef Name=""CollectionDate"" />
@@ -2051,7 +2118,7 @@ namespace Default
           <ReferentialConstraint Property=""GroupId"" ReferencedProperty=""Id"" />
         </NavigationProperty>
       </EntityType>
-      <EntityType Name=""ExamDecimal"" BaseType=""Data.Models.Exam"">
+      <EntityType Name=""DataDecimal"" BaseType=""Data.Models.Data"">
         <Property Name=""DecimalValue"" Type=""Edm.Decimal"" Nullable=""false"" />
         <NavigationProperty Name=""LimitDenormalized"" Type=""Data.Models.LimitDecimalDenormalized"" />
       </EntityType>
@@ -2068,7 +2135,7 @@ namespace Default
         <Property Name=""MaxType"" Type=""Data.Models.MaxTypeEnum"" />
         <Property Name=""Max"" Type=""Edm.Decimal"" />
         <Property Name=""Color"" Type=""Edm.Int32"" />
-        <NavigationProperty Name=""Exam"" Type=""Data.Models.ExamDecimal"">
+        <NavigationProperty Name=""Data"" Type=""Data.Models.DataDecimal"">
           <ReferentialConstraint Property=""GroupId"" ReferencedProperty=""GroupId"" />
           <ReferentialConstraint Property=""CollectionDate"" ReferencedProperty=""CollectionDate"" />
         </NavigationProperty>
@@ -2082,12 +2149,12 @@ namespace Default
         <Property Name=""CollectionDate"" Type=""Edm.DateTimeOffset"" />
         <Property Name=""Expected"" Type=""Edm.String"" />
         <Property Name=""Color"" Type=""Edm.Int32"" />
-        <NavigationProperty Name=""Exam"" Type=""Data.Models.ExamString"">
+        <NavigationProperty Name=""Data"" Type=""Data.Models.DataString"">
           <ReferentialConstraint Property=""GroupId"" ReferencedProperty=""GroupId"" />
           <ReferentialConstraint Property=""CollectionDate"" ReferencedProperty=""CollectionDate"" />
         </NavigationProperty>
       </EntityType>
-      <EntityType Name=""ExamString"" BaseType=""Data.Models.Exam"">
+      <EntityType Name=""DataString"" BaseType=""Data.Models.Data"">
         <Property Name=""StringValue"" Type=""Edm.String"" Nullable=""false"" />
         <NavigationProperty Name=""LimitDenormalized"" Type=""Data.Models.LimitStringDenormalized"" />
       </EntityType>
@@ -2120,6 +2187,10 @@ namespace Default
       </EnumType>
     </Schema>
     <Schema Namespace=""Data.Controllers"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""GroupDictionaryByName"">
+        <Property Name=""Keys"" Type=""Collection(Edm.String)"" />
+        <Property Name=""Values"" Type=""Collection(Data.Controllers.GroupDictionaryByName)"" />
+      </ComplexType>
       <EntityType Name=""GroupNameTree"">
         <Key>
           <PropertyRef Name=""Name"" />
@@ -2129,10 +2200,14 @@ namespace Default
       </EntityType>
     </Schema>
     <Schema Namespace=""Default"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <Action Name=""BulkInsertByName"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Group)"" />
+        <Parameter Name=""Groups"" Type=""Data.Controllers.GroupDictionaryByName"" Nullable=""false"" />
+      </Action>
       <Action Name=""BulkInsert"" IsBound=""true"">
-        <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Exam)"" />
-        <Parameter Name=""Exams"" Type=""Collection(Data.Models.Exam)"" />
-        <ReturnType Type=""Collection(Data.Models.Exam)"" />
+        <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Data)"" />
+        <Parameter Name=""Datas"" Type=""Collection(Data.Models.Data)"" />
+        <ReturnType Type=""Collection(Data.Models.Data)"" />
       </Action>
       <Action Name=""BulkInsertByName"" IsBound=""true"">
         <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Group)"" />
@@ -2143,23 +2218,23 @@ namespace Default
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Groups"" EntityType=""Data.Models.Group"">
           <NavigationPropertyBinding Path=""Parent"" Target=""Groups"" />
-          <NavigationPropertyBinding Path=""Exams"" Target=""Exams"" />
+          <NavigationPropertyBinding Path=""Datas"" Target=""Datas"" />
           <NavigationPropertyBinding Path=""Childs"" Target=""Groups"" />
         </EntitySet>
-        <EntitySet Name=""Exams"" EntityType=""Data.Models.Exam"">
+        <EntitySet Name=""Datas"" EntityType=""Data.Models.Data"">
           <NavigationPropertyBinding Path=""Group"" Target=""Groups"" />
-          <NavigationPropertyBinding Path=""Data.Models.ExamDecimal/LimitDenormalized"" Target=""LimitDecimalDenormalizeds"" />
-          <NavigationPropertyBinding Path=""Data.Models.ExamString/LimitDenormalized"" Target=""LimitStringDenormalizeds"" />
+          <NavigationPropertyBinding Path=""Data.Models.DataDecimal/LimitDenormalized"" Target=""LimitDecimalDenormalizeds"" />
+          <NavigationPropertyBinding Path=""Data.Models.DataString/LimitDenormalized"" Target=""LimitStringDenormalizeds"" />
         </EntitySet>
-        <EntitySet Name=""ExamDecimals"" EntityType=""Data.Models.ExamDecimal"">
+        <EntitySet Name=""DataDecimals"" EntityType=""Data.Models.DataDecimal"">
           <NavigationPropertyBinding Path=""Group"" Target=""Groups"" />
           <NavigationPropertyBinding Path=""LimitDenormalized"" Target=""LimitDecimalDenormalizeds"" />
         </EntitySet>
         <EntitySet Name=""LimitDecimalDenormalizeds"" EntityType=""Data.Models.LimitDecimalDenormalized"">
-          <NavigationPropertyBinding Path=""Exam"" Target=""ExamDecimals"" />
+          <NavigationPropertyBinding Path=""Data"" Target=""DataDecimals"" />
         </EntitySet>
         <EntitySet Name=""LimitStringDenormalizeds"" EntityType=""Data.Models.LimitStringDenormalized"">
-          <NavigationPropertyBinding Path=""Exam"" Target=""Exams"" />
+          <NavigationPropertyBinding Path=""Data"" Target=""Datas"" />
         </EntitySet>
       </EntityContainer>
     </Schema>
@@ -2176,7 +2251,7 @@ namespace Default
                 global::System.Xml.XmlReader reader = CreateXmlReader(Edmx);
                 try
                 {
-                    return global::Microsoft.OData.Edm.Csdl.CsdlReader.Parse(reader);
+                    return global::Microsoft.OData.Edm.Csdl.EdmxReader.Parse(reader);
                 }
                 finally
                 {
@@ -2196,16 +2271,28 @@ namespace Default
     public static class ExtensionMethods
     {
         /// <summary>
-        /// There are no comments for BulkInsert in the schema.
+        /// There are no comments for BulkInsertByName in the schema.
         /// </summary>
-        public static global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Exam> BulkInsert(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Exam> source, global::System.Collections.Generic.ICollection<global::Data.Models.Exam> Exams)
+        public static global::Microsoft.OData.Client.DataServiceActionQuery BulkInsertByName(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source, global::Data.Controllers.GroupDictionaryByName Groups)
         {
             if (!source.IsComposable)
             {
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Exam>(source.Context, source.AppendRequestUri("Default.BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Exams", Exams));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery(source.Context, source.AppendRequestUri("Default.BulkInsertByName"), new global::Microsoft.OData.Client.BodyOperationParameter("Groups", Groups));
+        }
+        /// <summary>
+        /// There are no comments for BulkInsert in the schema.
+        /// </summary>
+        public static global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Data> BulkInsert(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> source, global::System.Collections.Generic.ICollection<global::Data.Models.Data> Datas)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Data>(source.Context, source.AppendRequestUri("Default.BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Datas", Datas));
         }
         /// <summary>
         /// There are no comments for BulkInsertByName in the schema.
