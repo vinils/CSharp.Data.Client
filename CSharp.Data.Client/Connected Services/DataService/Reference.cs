@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 09/04/2019 01:21:44
+// Generation date: 09/04/2019 11:51:08
 namespace Data.Models
 {
     /// <summary>
@@ -2280,7 +2280,7 @@ namespace Default
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(source.Context, source.AppendRequestUri("Default.BulkInsertByName"), new global::Microsoft.OData.Client.BodyOperationParameter("Groups", Groups));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery(source.Context, source.AppendRequestUri("BulkInsertByName"), new global::Microsoft.OData.Client.BodyOperationParameter("Groups", Groups));
         }
         /// <summary>
         /// There are no comments for BulkInsert in the schema.
@@ -2292,7 +2292,7 @@ namespace Default
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Data>(source.Context, source.AppendRequestUri("Default.BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Datas", Datas));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Data>(source.Context, source.AppendRequestUri("BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Datas", Datas));
         }
         /// <summary>
         /// There are no comments for BulkInsertByName in the schema.
