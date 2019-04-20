@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 09/04/2019 11:51:08
+// Generation date: 19/04/2019 23:56:23
 namespace Data.Models
 {
     /// <summary>
@@ -1704,73 +1704,6 @@ namespace Data.Models
 namespace Data.Controllers
 {
     /// <summary>
-    /// There are no comments for GroupDictionaryByName in the schema.
-    /// </summary>
-    public partial class GroupDictionaryByName : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property Keys in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<string> Keys
-        {
-            get
-            {
-                return this._Keys;
-            }
-            set
-            {
-                this.OnKeysChanging(value);
-                this._Keys = value;
-                this.OnKeysChanged();
-                this.OnPropertyChanged("Keys");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<string> _Keys = new global::System.Collections.ObjectModel.ObservableCollection<string>();
-        partial void OnKeysChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
-        partial void OnKeysChanged();
-        /// <summary>
-        /// There are no comments for Property Values in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName> Values
-        {
-            get
-            {
-                return this._Values;
-            }
-            set
-            {
-                this.OnValuesChanging(value);
-                this._Values = value;
-                this.OnValuesChanged();
-                this.OnPropertyChanged("Values");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName> _Values = new global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName>();
-        partial void OnValuesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::Data.Controllers.GroupDictionaryByName> value);
-        partial void OnValuesChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
     /// There are no comments for GroupNameTreeSingle in the schema.
     /// </summary>
     public partial class GroupNameTreeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GroupNameTree>
@@ -2187,10 +2120,6 @@ namespace Default
       </EnumType>
     </Schema>
     <Schema Namespace=""Data.Controllers"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""GroupDictionaryByName"">
-        <Property Name=""Keys"" Type=""Collection(Edm.String)"" />
-        <Property Name=""Values"" Type=""Collection(Data.Controllers.GroupDictionaryByName)"" />
-      </ComplexType>
       <EntityType Name=""GroupNameTree"">
         <Key>
           <PropertyRef Name=""Name"" />
@@ -2200,10 +2129,6 @@ namespace Default
       </EntityType>
     </Schema>
     <Schema Namespace=""Default"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <Action Name=""BulkInsertByName"" IsBound=""true"">
-        <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Group)"" />
-        <Parameter Name=""Groups"" Type=""Data.Controllers.GroupDictionaryByName"" Nullable=""false"" />
-      </Action>
       <Action Name=""BulkInsert"" IsBound=""true"">
         <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Data)"" />
         <Parameter Name=""Datas"" Type=""Collection(Data.Models.Data)"" />
@@ -2270,18 +2195,6 @@ namespace Default
     /// </summary>
     public static class ExtensionMethods
     {
-        /// <summary>
-        /// There are no comments for BulkInsertByName in the schema.
-        /// </summary>
-        public static global::Microsoft.OData.Client.DataServiceActionQuery BulkInsertByName(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source, global::Data.Controllers.GroupDictionaryByName Groups)
-        {
-            if (!source.IsComposable)
-            {
-                throw new global::System.NotSupportedException("The previous function is not composable.");
-            }
-
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(source.Context, source.AppendRequestUri("BulkInsertByName"), new global::Microsoft.OData.Client.BodyOperationParameter("Groups", Groups));
-        }
         /// <summary>
         /// There are no comments for BulkInsert in the schema.
         /// </summary>
