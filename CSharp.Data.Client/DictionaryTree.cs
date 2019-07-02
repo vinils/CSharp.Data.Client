@@ -22,7 +22,7 @@
 
         public Y[] Key => GetKeyList().ToArray();
 
-        public DictionaryTree(Func<T, Y> getKey, T root = default(T), DictionaryTree<T, Y> parent = null)
+        public DictionaryTree(Func<T, Y> getKey, T root = default, DictionaryTree<T, Y> parent = null)
             : base()
         {
             this.getKey = getKey;
