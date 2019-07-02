@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 19/04/2019 23:56:23
+// Generation date: 02/07/2019 05:46:53
 namespace Data.Models
 {
     /// <summary>
@@ -2142,14 +2142,14 @@ namespace Default
       </Action>
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Groups"" EntityType=""Data.Models.Group"">
-          <NavigationPropertyBinding Path=""Parent"" Target=""Groups"" />
-          <NavigationPropertyBinding Path=""Datas"" Target=""Datas"" />
           <NavigationPropertyBinding Path=""Childs"" Target=""Groups"" />
+          <NavigationPropertyBinding Path=""Datas"" Target=""Datas"" />
+          <NavigationPropertyBinding Path=""Parent"" Target=""Groups"" />
         </EntitySet>
         <EntitySet Name=""Datas"" EntityType=""Data.Models.Data"">
-          <NavigationPropertyBinding Path=""Group"" Target=""Groups"" />
           <NavigationPropertyBinding Path=""Data.Models.DataDecimal/LimitDenormalized"" Target=""LimitDecimalDenormalizeds"" />
           <NavigationPropertyBinding Path=""Data.Models.DataString/LimitDenormalized"" Target=""LimitStringDenormalizeds"" />
+          <NavigationPropertyBinding Path=""Group"" Target=""Groups"" />
         </EntitySet>
         <EntitySet Name=""DataDecimals"" EntityType=""Data.Models.DataDecimal"">
           <NavigationPropertyBinding Path=""Group"" Target=""Groups"" />
@@ -2176,7 +2176,21 @@ namespace Default
                 global::System.Xml.XmlReader reader = CreateXmlReader(Edmx);
                 try
                 {
-                    return global::Microsoft.OData.Edm.Csdl.CsdlReader.Parse(reader);
+                    global::System.Collections.Generic.IEnumerable<global::Microsoft.OData.Edm.Validation.EdmError> errors;
+                    global::Microsoft.OData.Edm.IEdmModel edmModel;
+                    
+                    if (!global::Microsoft.OData.Edm.Csdl.CsdlReader.TryParse(reader, false, out edmModel, out errors))
+                    {
+                        global::System.Text.StringBuilder errorMessages = new System.Text.StringBuilder();
+                        foreach (var error in errors)
+                        {
+                            errorMessages.Append(error.ErrorMessage);
+                            errorMessages.Append("; ");
+                        }
+                        throw new global::System.InvalidOperationException(errorMessages.ToString());
+                    }
+
+                    return edmModel;
                 }
                 finally
                 {

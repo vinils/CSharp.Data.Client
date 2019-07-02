@@ -1,6 +1,6 @@
 ﻿{
-  "ProviderId": "Microsoft.OData.ConnectedService",
-  "Version": "0.2.0",
+  "ProviderId": "Unchase.OData.ConnectedService",
+  "Version": "0.1.0.0",
   "GettingStartedDocument": {
     "Uri": "http://odata.github.io/odata.net/"
   },
@@ -8,6 +8,9 @@
     "EnableNamingAlias": false,
     "IgnoreUnexpectedElementsAndAttributes": false,
     "IncludeT4File": false,
+    "FunctionImportsGenerator": 0,
+    "IncludeExtensionsT4File": false,
+    "GenerateFunctionImports": false,
     "ServiceName": "DataService",
     "Endpoint": "http://localhost:58994/odata/v4/$metadata",
     "EdmxVersion": {
@@ -21,6 +24,18 @@
     "GeneratedFileNamePrefix": "Reference",
     "UseNameSpacePrefix": false,
     "NamespacePrefix": null,
-    "UseDataServiceCollection": true
+    "UseDataServiceCollection": true,
+    "OpenGeneratedFilesOnComplete": false,
+    "LanguageOption": 0,
+    "UseNetworkCredentials": false,
+    "NetworkCredentialsUserName": null,
+    "NetworkCredentialsPassword": null,
+    "NetworkCredentialsDomain": null,
+    "WebProxyUri": null,
+    "UseWebProxy": false,
+    "UseWebProxyCredentials": false,
+    "WebProxyNetworkCredentialsUserName": null,
+    "WebProxyNetworkCredentialsPassword": null,
+    "WebProxyNetworkCredentialsDomain": null
   }
 }
