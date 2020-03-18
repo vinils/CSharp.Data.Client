@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 02/07/2019 05:46:53
+// Generation date: 3/18/2020 2:33:50 AM
 namespace Data.Models
 {
     /// <summary>
@@ -37,8 +37,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Parent in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.GroupSingle Parent
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.GroupSingle Parent
         {
             get
             {
@@ -53,13 +53,13 @@ namespace Data.Models
                 return this._Parent;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.GroupSingle _Parent;
         /// <summary>
         /// There are no comments for Datas in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> Datas
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> Datas
         {
             get
             {
@@ -74,13 +74,13 @@ namespace Data.Models
                 return this._Datas;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> _Datas;
         /// <summary>
         /// There are no comments for Childs in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> Childs
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> Childs
         {
             get
             {
@@ -95,29 +95,8 @@ namespace Data.Models
                 return this._Childs;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> _Childs;
-        /// <summary>
-        /// There are no comments for LimitDecimals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimal> LimitDecimals
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LimitDecimals == null))
-                {
-                    this._LimitDecimals = Context.CreateQuery<global::Data.Models.LimitDecimal>(GetPath("LimitDecimals"));
-                }
-                return this._LimitDecimals;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimal> _LimitDecimals;
     }
     /// <summary>
     /// There are no comments for Group in the schema.
@@ -133,7 +112,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="ID">Initial value of Id.</param>
         /// <param name="name">Initial value of Name.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static Group CreateGroup(global::System.Guid ID, string name)
         {
             Group group = new Group();
@@ -144,8 +123,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Property Id in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Guid Id
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Guid Id
         {
             get
             {
@@ -159,15 +138,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Id");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Guid _Id;
         partial void OnIdChanging(global::System.Guid value);
         partial void OnIdChanged();
         /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Name
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Name
         {
             get
             {
@@ -181,15 +160,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Name");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _Name;
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
         /// There are no comments for Property Initials in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Initials
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Initials
         {
             get
             {
@@ -203,15 +182,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Initials");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _Initials;
         partial void OnInitialsChanging(string value);
         partial void OnInitialsChanged();
         /// <summary>
         /// There are no comments for Property ParentId in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.Guid> ParentId
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::System.Guid> ParentId
         {
             get
             {
@@ -225,15 +204,15 @@ namespace Data.Models
                 this.OnPropertyChanged("ParentId");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<global::System.Guid> _ParentId;
         partial void OnParentIdChanging(global::System.Nullable<global::System.Guid> value);
         partial void OnParentIdChanged();
         /// <summary>
         /// There are no comments for Property MeasureUnit in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string MeasureUnit
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string MeasureUnit
         {
             get
             {
@@ -247,81 +226,15 @@ namespace Data.Models
                 this.OnPropertyChanged("MeasureUnit");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _MeasureUnit;
         partial void OnMeasureUnitChanging(string value);
         partial void OnMeasureUnitChanged();
         /// <summary>
-        /// There are no comments for Property Parent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.Group Parent
-        {
-            get
-            {
-                return this._Parent;
-            }
-            set
-            {
-                this.OnParentChanging(value);
-                this._Parent = value;
-                this.OnParentChanged();
-                this.OnPropertyChanged("Parent");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.Group _Parent;
-        partial void OnParentChanging(global::Data.Models.Group value);
-        partial void OnParentChanged();
-        /// <summary>
-        /// There are no comments for Property Datas in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> Datas
-        {
-            get
-            {
-                return this._Datas;
-            }
-            set
-            {
-                this.OnDatasChanging(value);
-                this._Datas = value;
-                this.OnDatasChanged();
-                this.OnPropertyChanged("Datas");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> _Datas = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDatasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> value);
-        partial void OnDatasChanged();
-        /// <summary>
-        /// There are no comments for Property Childs in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group> Childs
-        {
-            get
-            {
-                return this._Childs;
-            }
-            set
-            {
-                this.OnChildsChanging(value);
-                this._Childs = value;
-                this.OnChildsChanged();
-                this.OnPropertyChanged("Childs");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group> _Childs = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnChildsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group> value);
-        partial void OnChildsChanged();
-        /// <summary>
         /// There are no comments for Property LimitDecimals in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.LimitDecimal> LimitDecimals
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Collections.ObjectModel.ObservableCollection<global::Data.Models.LimitDecimal> LimitDecimals
         {
             get
             {
@@ -335,20 +248,86 @@ namespace Data.Models
                 this.OnPropertyChanged("LimitDecimals");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.LimitDecimal> _LimitDecimals = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.LimitDecimal>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLimitDecimalsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.LimitDecimal> value);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::Data.Models.LimitDecimal> _LimitDecimals = new global::System.Collections.ObjectModel.ObservableCollection<global::Data.Models.LimitDecimal>();
+        partial void OnLimitDecimalsChanging(global::System.Collections.ObjectModel.ObservableCollection<global::Data.Models.LimitDecimal> value);
         partial void OnLimitDecimalsChanged();
+        /// <summary>
+        /// There are no comments for Property Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.Group Parent
+        {
+            get
+            {
+                return this._Parent;
+            }
+            set
+            {
+                this.OnParentChanging(value);
+                this._Parent = value;
+                this.OnParentChanged();
+                this.OnPropertyChanged("Parent");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Data.Models.Group _Parent;
+        partial void OnParentChanging(global::Data.Models.Group value);
+        partial void OnParentChanged();
+        /// <summary>
+        /// There are no comments for Property Datas in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> Datas
+        {
+            get
+            {
+                return this._Datas;
+            }
+            set
+            {
+                this.OnDatasChanging(value);
+                this._Datas = value;
+                this.OnDatasChanged();
+                this.OnPropertyChanged("Datas");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> _Datas = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDatasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Data> value);
+        partial void OnDatasChanged();
+        /// <summary>
+        /// There are no comments for Property Childs in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group> Childs
+        {
+            get
+            {
+                return this._Childs;
+            }
+            set
+            {
+                this.OnChildsChanging(value);
+                this._Childs = value;
+                this.OnChildsChanged();
+                this.OnPropertyChanged("Childs");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group> _Childs = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnChildsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Models.Group> value);
+        partial void OnChildsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// The value of the property is changed
         /// </summary>
         /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected virtual void OnPropertyChanged(string property)
         {
             if ((this.PropertyChanged != null))
@@ -383,8 +362,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Group in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.GroupSingle Group
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.GroupSingle Group
         {
             get
             {
@@ -399,24 +378,24 @@ namespace Data.Models
                 return this._Group;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.GroupSingle _Group;
     }
     /// <summary>
     /// There are no comments for Data in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// GroupId
     /// CollectionDate
+    /// GroupId
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
+    [global::Microsoft.OData.Client.Key("CollectionDate", "GroupId")]
     public abstract partial class Data : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
         /// There are no comments for Property GroupId in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.Guid> GroupId
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::System.Guid> GroupId
         {
             get
             {
@@ -430,15 +409,15 @@ namespace Data.Models
                 this.OnPropertyChanged("GroupId");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<global::System.Guid> _GroupId;
         partial void OnGroupIdChanging(global::System.Nullable<global::System.Guid> value);
         partial void OnGroupIdChanged();
         /// <summary>
         /// There are no comments for Property CollectionDate in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.DateTimeOffset CollectionDate
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.DateTimeOffset CollectionDate
         {
             get
             {
@@ -452,15 +431,15 @@ namespace Data.Models
                 this.OnPropertyChanged("CollectionDate");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.DateTimeOffset _CollectionDate;
         partial void OnCollectionDateChanging(global::System.DateTimeOffset value);
         partial void OnCollectionDateChanged();
         /// <summary>
         /// There are no comments for Property Group in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.Group Group
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.Group Group
         {
             get
             {
@@ -474,20 +453,20 @@ namespace Data.Models
                 this.OnPropertyChanged("Group");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.Group _Group;
         partial void OnGroupChanging(global::Data.Models.Group value);
         partial void OnGroupChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// The value of the property is changed
         /// </summary>
         /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected virtual void OnPropertyChanged(string property)
         {
             if ((this.PropertyChanged != null))
@@ -522,8 +501,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for LimitDenormalized in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.LimitDecimalDenormalizedSingle LimitDenormalized
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.LimitDecimalDenormalizedSingle LimitDenormalized
         {
             get
             {
@@ -538,13 +517,13 @@ namespace Data.Models
                 return this._LimitDenormalized;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.LimitDecimalDenormalizedSingle _LimitDenormalized;
         /// <summary>
         /// There are no comments for Group in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.GroupSingle Group
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.GroupSingle Group
         {
             get
             {
@@ -559,17 +538,17 @@ namespace Data.Models
                 return this._Group;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.GroupSingle _Group;
     }
     /// <summary>
     /// There are no comments for DataDecimal in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// GroupId
     /// CollectionDate
+    /// GroupId
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
+    [global::Microsoft.OData.Client.Key("CollectionDate", "GroupId")]
     public partial class DataDecimal : Data
     {
         /// <summary>
@@ -577,7 +556,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="collectionDate">Initial value of CollectionDate.</param>
         /// <param name="decimalValue">Initial value of DecimalValue.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static DataDecimal CreateDataDecimal(global::System.DateTimeOffset collectionDate, decimal decimalValue)
         {
             DataDecimal dataDecimal = new DataDecimal();
@@ -588,8 +567,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Property DecimalValue in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public decimal DecimalValue
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual decimal DecimalValue
         {
             get
             {
@@ -603,15 +582,15 @@ namespace Data.Models
                 this.OnPropertyChanged("DecimalValue");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private decimal _DecimalValue;
         partial void OnDecimalValueChanging(decimal value);
         partial void OnDecimalValueChanged();
         /// <summary>
         /// There are no comments for Property LimitDenormalized in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.LimitDecimalDenormalized LimitDenormalized
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.LimitDecimalDenormalized LimitDenormalized
         {
             get
             {
@@ -625,7 +604,7 @@ namespace Data.Models
                 this.OnPropertyChanged("LimitDenormalized");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.LimitDecimalDenormalized _LimitDenormalized;
         partial void OnLimitDenormalizedChanging(global::Data.Models.LimitDecimalDenormalized value);
         partial void OnLimitDenormalizedChanged();
@@ -656,8 +635,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Data in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.DataDecimalSingle Data
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.DataDecimalSingle Data
         {
             get
             {
@@ -672,24 +651,37 @@ namespace Data.Models
                 return this._Data;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.DataDecimalSingle _Data;
     }
     /// <summary>
     /// There are no comments for LimitDecimalDenormalized in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// GroupId
     /// CollectionDate
+    /// GroupId
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
+    [global::Microsoft.OData.Client.Key("CollectionDate", "GroupId")]
     public partial class LimitDecimalDenormalized : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
+        /// Create a new LimitDecimalDenormalized object.
+        /// </summary>
+        /// <param name="groupId">Initial value of GroupId.</param>
+        /// <param name="collectionDate">Initial value of CollectionDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static LimitDecimalDenormalized CreateLimitDecimalDenormalized(global::System.Guid groupId, global::System.DateTimeOffset collectionDate)
+        {
+            LimitDecimalDenormalized limitDecimalDenormalized = new LimitDecimalDenormalized();
+            limitDecimalDenormalized.GroupId = groupId;
+            limitDecimalDenormalized.CollectionDate = collectionDate;
+            return limitDecimalDenormalized;
+        }
+        /// <summary>
         /// There are no comments for Property GroupId in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.Guid> GroupId
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Guid GroupId
         {
             get
             {
@@ -703,15 +695,15 @@ namespace Data.Models
                 this.OnPropertyChanged("GroupId");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.Guid> _GroupId;
-        partial void OnGroupIdChanging(global::System.Nullable<global::System.Guid> value);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Guid _GroupId;
+        partial void OnGroupIdChanging(global::System.Guid value);
         partial void OnGroupIdChanged();
         /// <summary>
         /// There are no comments for Property CollectionDate in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.DateTimeOffset> CollectionDate
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.DateTimeOffset CollectionDate
         {
             get
             {
@@ -725,15 +717,15 @@ namespace Data.Models
                 this.OnPropertyChanged("CollectionDate");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _CollectionDate;
-        partial void OnCollectionDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.DateTimeOffset _CollectionDate;
+        partial void OnCollectionDateChanging(global::System.DateTimeOffset value);
         partial void OnCollectionDateChanged();
         /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Name
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Name
         {
             get
             {
@@ -747,15 +739,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Name");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _Name;
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
         /// There are no comments for Property MinType in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::Data.Models.MinTypeEnum> MinType
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Data.Models.MinTypeEnum> MinType
         {
             get
             {
@@ -769,15 +761,15 @@ namespace Data.Models
                 this.OnPropertyChanged("MinType");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<global::Data.Models.MinTypeEnum> _MinType;
         partial void OnMinTypeChanging(global::System.Nullable<global::Data.Models.MinTypeEnum> value);
         partial void OnMinTypeChanged();
         /// <summary>
         /// There are no comments for Property Min in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<decimal> Min
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<decimal> Min
         {
             get
             {
@@ -791,15 +783,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Min");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<decimal> _Min;
         partial void OnMinChanging(global::System.Nullable<decimal> value);
         partial void OnMinChanged();
         /// <summary>
         /// There are no comments for Property MaxType in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::Data.Models.MaxTypeEnum> MaxType
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Data.Models.MaxTypeEnum> MaxType
         {
             get
             {
@@ -813,15 +805,15 @@ namespace Data.Models
                 this.OnPropertyChanged("MaxType");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<global::Data.Models.MaxTypeEnum> _MaxType;
         partial void OnMaxTypeChanging(global::System.Nullable<global::Data.Models.MaxTypeEnum> value);
         partial void OnMaxTypeChanged();
         /// <summary>
         /// There are no comments for Property Max in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<decimal> Max
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<decimal> Max
         {
             get
             {
@@ -835,15 +827,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Max");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<decimal> _Max;
         partial void OnMaxChanging(global::System.Nullable<decimal> value);
         partial void OnMaxChanged();
         /// <summary>
         /// There are no comments for Property Color in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<int> Color
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<int> Color
         {
             get
             {
@@ -857,15 +849,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Color");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<int> _Color;
         partial void OnColorChanging(global::System.Nullable<int> value);
         partial void OnColorChanged();
         /// <summary>
         /// There are no comments for Property Data in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.DataDecimal Data
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.DataDecimal Data
         {
             get
             {
@@ -879,20 +871,20 @@ namespace Data.Models
                 this.OnPropertyChanged("Data");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.DataDecimal _Data;
         partial void OnDataChanging(global::Data.Models.DataDecimal value);
         partial void OnDataChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// The value of the property is changed
         /// </summary>
         /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected virtual void OnPropertyChanged(string property)
         {
             if ((this.PropertyChanged != null))
@@ -927,8 +919,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Data in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.DataStringSingle Data
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.DataStringSingle Data
         {
             get
             {
@@ -943,24 +935,37 @@ namespace Data.Models
                 return this._Data;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.DataStringSingle _Data;
     }
     /// <summary>
     /// There are no comments for LimitStringDenormalized in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// GroupId
     /// CollectionDate
+    /// GroupId
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
+    [global::Microsoft.OData.Client.Key("CollectionDate", "GroupId")]
     public partial class LimitStringDenormalized : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
+        /// Create a new LimitStringDenormalized object.
+        /// </summary>
+        /// <param name="groupId">Initial value of GroupId.</param>
+        /// <param name="collectionDate">Initial value of CollectionDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static LimitStringDenormalized CreateLimitStringDenormalized(global::System.Guid groupId, global::System.DateTimeOffset collectionDate)
+        {
+            LimitStringDenormalized limitStringDenormalized = new LimitStringDenormalized();
+            limitStringDenormalized.GroupId = groupId;
+            limitStringDenormalized.CollectionDate = collectionDate;
+            return limitStringDenormalized;
+        }
+        /// <summary>
         /// There are no comments for Property GroupId in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.Guid> GroupId
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Guid GroupId
         {
             get
             {
@@ -974,15 +979,15 @@ namespace Data.Models
                 this.OnPropertyChanged("GroupId");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.Guid> _GroupId;
-        partial void OnGroupIdChanging(global::System.Nullable<global::System.Guid> value);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Guid _GroupId;
+        partial void OnGroupIdChanging(global::System.Guid value);
         partial void OnGroupIdChanged();
         /// <summary>
         /// There are no comments for Property CollectionDate in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.DateTimeOffset> CollectionDate
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.DateTimeOffset CollectionDate
         {
             get
             {
@@ -996,15 +1001,15 @@ namespace Data.Models
                 this.OnPropertyChanged("CollectionDate");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _CollectionDate;
-        partial void OnCollectionDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.DateTimeOffset _CollectionDate;
+        partial void OnCollectionDateChanging(global::System.DateTimeOffset value);
         partial void OnCollectionDateChanged();
         /// <summary>
         /// There are no comments for Property Expected in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Expected
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Expected
         {
             get
             {
@@ -1018,15 +1023,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Expected");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _Expected;
         partial void OnExpectedChanging(string value);
         partial void OnExpectedChanged();
         /// <summary>
         /// There are no comments for Property Color in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<int> Color
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<int> Color
         {
             get
             {
@@ -1040,15 +1045,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Color");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<int> _Color;
         partial void OnColorChanging(global::System.Nullable<int> value);
         partial void OnColorChanged();
         /// <summary>
         /// There are no comments for Property Data in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.DataString Data
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.DataString Data
         {
             get
             {
@@ -1062,20 +1067,20 @@ namespace Data.Models
                 this.OnPropertyChanged("Data");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.DataString _Data;
         partial void OnDataChanging(global::Data.Models.DataString value);
         partial void OnDataChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// The value of the property is changed
         /// </summary>
         /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected virtual void OnPropertyChanged(string property)
         {
             if ((this.PropertyChanged != null))
@@ -1110,8 +1115,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for LimitDenormalized in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.LimitStringDenormalizedSingle LimitDenormalized
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.LimitStringDenormalizedSingle LimitDenormalized
         {
             get
             {
@@ -1126,13 +1131,13 @@ namespace Data.Models
                 return this._LimitDenormalized;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.LimitStringDenormalizedSingle _LimitDenormalized;
         /// <summary>
         /// There are no comments for Group in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.GroupSingle Group
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.GroupSingle Group
         {
             get
             {
@@ -1147,17 +1152,17 @@ namespace Data.Models
                 return this._Group;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.GroupSingle _Group;
     }
     /// <summary>
     /// There are no comments for DataString in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// GroupId
     /// CollectionDate
+    /// GroupId
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("GroupId", "CollectionDate")]
+    [global::Microsoft.OData.Client.Key("CollectionDate", "GroupId")]
     public partial class DataString : Data
     {
         /// <summary>
@@ -1165,7 +1170,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="collectionDate">Initial value of CollectionDate.</param>
         /// <param name="stringValue">Initial value of StringValue.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static DataString CreateDataString(global::System.DateTimeOffset collectionDate, string stringValue)
         {
             DataString dataString = new DataString();
@@ -1176,8 +1181,8 @@ namespace Data.Models
         /// <summary>
         /// There are no comments for Property StringValue in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string StringValue
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string StringValue
         {
             get
             {
@@ -1191,15 +1196,15 @@ namespace Data.Models
                 this.OnPropertyChanged("StringValue");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _StringValue;
         partial void OnStringValueChanging(string value);
         partial void OnStringValueChanged();
         /// <summary>
         /// There are no comments for Property LimitDenormalized in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.LimitStringDenormalized LimitDenormalized
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.LimitStringDenormalized LimitDenormalized
         {
             get
             {
@@ -1213,104 +1218,34 @@ namespace Data.Models
                 this.OnPropertyChanged("LimitDenormalized");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.LimitStringDenormalized _LimitDenormalized;
         partial void OnLimitDenormalizedChanging(global::Data.Models.LimitStringDenormalized value);
         partial void OnLimitDenormalizedChanged();
     }
     /// <summary>
-    /// There are no comments for LimitDecimalSingle in the schema.
-    /// </summary>
-    public partial class LimitDecimalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LimitDecimal>
-    {
-        /// <summary>
-        /// Initialize a new LimitDecimalSingle object.
-        /// </summary>
-        public LimitDecimalSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new LimitDecimalSingle object.
-        /// </summary>
-        public LimitDecimalSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new LimitDecimalSingle object.
-        /// </summary>
-        public LimitDecimalSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<LimitDecimal> query)
-            : base(query) {}
-
-        /// <summary>
-        /// There are no comments for Last in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.LimitDecimalSingle Last
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Last == null))
-                {
-                    this._Last = new global::Data.Models.LimitDecimalSingle(this.Context, GetPath("Last"));
-                }
-                return this._Last;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.LimitDecimalSingle _Last;
-        /// <summary>
-        /// There are no comments for Group in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.GroupSingle Group
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Group == null))
-                {
-                    this._Group = new global::Data.Models.GroupSingle(this.Context, GetPath("Group"));
-                }
-                return this._Group;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Data.Models.GroupSingle _Group;
-    }
-    /// <summary>
     /// There are no comments for LimitDecimal in the schema.
     /// </summary>
-    /// <KeyProperties>
-    /// GroupId
-    /// Priority
-    /// Max
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("GroupId", "Priority", "Max")]
-    public partial class LimitDecimal : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    public partial class LimitDecimal : global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
         /// Create a new LimitDecimal object.
         /// </summary>
+        /// <param name="priority">Initial value of Priority.</param>
         /// <param name="max">Initial value of Max.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static LimitDecimal CreateLimitDecimal(decimal max)
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static LimitDecimal CreateLimitDecimal(int priority, decimal max)
         {
             LimitDecimal limitDecimal = new LimitDecimal();
+            limitDecimal.Priority = priority;
             limitDecimal.Max = max;
             return limitDecimal;
         }
         /// <summary>
         /// There are no comments for Property GroupId in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<global::System.Guid> GroupId
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::System.Guid> GroupId
         {
             get
             {
@@ -1324,15 +1259,15 @@ namespace Data.Models
                 this.OnPropertyChanged("GroupId");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<global::System.Guid> _GroupId;
         partial void OnGroupIdChanging(global::System.Nullable<global::System.Guid> value);
         partial void OnGroupIdChanged();
         /// <summary>
         /// There are no comments for Property Priority in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<int> Priority
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual int Priority
         {
             get
             {
@@ -1346,15 +1281,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Priority");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Nullable<int> _Priority;
-        partial void OnPriorityChanging(global::System.Nullable<int> value);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private int _Priority;
+        partial void OnPriorityChanging(int value);
         partial void OnPriorityChanged();
         /// <summary>
         /// There are no comments for Property Max in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public decimal Max
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual decimal Max
         {
             get
             {
@@ -1368,15 +1303,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Max");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private decimal _Max;
         partial void OnMaxChanging(decimal value);
         partial void OnMaxChanged();
         /// <summary>
         /// There are no comments for Property Min in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Nullable<decimal> Min
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<decimal> Min
         {
             get
             {
@@ -1390,15 +1325,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Min");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::System.Nullable<decimal> _Min;
         partial void OnMinChanging(global::System.Nullable<decimal> value);
         partial void OnMinChanged();
         /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Name
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Name
         {
             get
             {
@@ -1412,15 +1347,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Name");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _Name;
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
         /// There are no comments for Property Last in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.LimitDecimal Last
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.LimitDecimal Last
         {
             get
             {
@@ -1434,15 +1369,15 @@ namespace Data.Models
                 this.OnPropertyChanged("Last");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.LimitDecimal _Last;
         partial void OnLastChanging(global::Data.Models.LimitDecimal value);
         partial void OnLastChanged();
         /// <summary>
         /// There are no comments for Property Group in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Data.Models.Group Group
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Data.Models.Group Group
         {
             get
             {
@@ -1456,20 +1391,20 @@ namespace Data.Models
                 this.OnPropertyChanged("Group");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Data.Models.Group _Group;
         partial void OnGroupChanging(global::Data.Models.Group value);
         partial void OnGroupChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// The value of the property is changed
         /// </summary>
         /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected virtual void OnPropertyChanged(string property)
         {
             if ((this.PropertyChanged != null))
@@ -1504,7 +1439,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.GroupSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.GroupSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Models.GroupSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1516,7 +1451,7 @@ namespace Data.Models
         public static global::Data.Models.GroupSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source,
             global::System.Guid id)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
                 { "Id", id }
             };
@@ -1527,7 +1462,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.DataSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.DataSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Models.DataSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1535,16 +1470,16 @@ namespace Data.Models
         /// Get an entity of type global::Data.Models.Data as global::Data.Models.DataSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
-        /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
+        /// <param name="groupId">The value of groupId</param>
         public static global::Data.Models.DataSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> source,
-            global::System.Nullable<global::System.Guid> groupId, 
-            global::System.DateTimeOffset collectionDate)
+            global::System.DateTimeOffset collectionDate, 
+            global::System.Nullable<global::System.Guid> groupId)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "GroupId", groupId }, 
-                { "CollectionDate", collectionDate }
+                { "CollectionDate", collectionDate }, 
+                { "GroupId", groupId }
             };
             return new global::Data.Models.DataSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1553,7 +1488,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.DataDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.DataDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Models.DataDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1561,16 +1496,16 @@ namespace Data.Models
         /// Get an entity of type global::Data.Models.DataDecimal as global::Data.Models.DataDecimalSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
-        /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
+        /// <param name="groupId">The value of groupId</param>
         public static global::Data.Models.DataDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> source,
-            global::System.Nullable<global::System.Guid> groupId, 
-            global::System.DateTimeOffset collectionDate)
+            global::System.DateTimeOffset collectionDate, 
+            global::System.Nullable<global::System.Guid> groupId)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "GroupId", groupId }, 
-                { "CollectionDate", collectionDate }
+                { "CollectionDate", collectionDate }, 
+                { "GroupId", groupId }
             };
             return new global::Data.Models.DataDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1588,7 +1523,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.LimitDecimalDenormalizedSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimalDenormalized> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.LimitDecimalDenormalizedSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimalDenormalized> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Models.LimitDecimalDenormalizedSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1596,16 +1531,16 @@ namespace Data.Models
         /// Get an entity of type global::Data.Models.LimitDecimalDenormalized as global::Data.Models.LimitDecimalDenormalizedSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
-        /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
+        /// <param name="groupId">The value of groupId</param>
         public static global::Data.Models.LimitDecimalDenormalizedSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimalDenormalized> source,
-            global::System.Nullable<global::System.Guid> groupId, 
-            global::System.Nullable<global::System.DateTimeOffset> collectionDate)
+            global::System.DateTimeOffset collectionDate, 
+            global::System.Guid groupId)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "GroupId", groupId }, 
-                { "CollectionDate", collectionDate }
+                { "CollectionDate", collectionDate }, 
+                { "GroupId", groupId }
             };
             return new global::Data.Models.LimitDecimalDenormalizedSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1614,7 +1549,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.LimitStringDenormalizedSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitStringDenormalized> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.LimitStringDenormalizedSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitStringDenormalized> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Models.LimitStringDenormalizedSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1622,16 +1557,16 @@ namespace Data.Models
         /// Get an entity of type global::Data.Models.LimitStringDenormalized as global::Data.Models.LimitStringDenormalizedSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
-        /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
+        /// <param name="groupId">The value of groupId</param>
         public static global::Data.Models.LimitStringDenormalizedSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitStringDenormalized> source,
-            global::System.Nullable<global::System.Guid> groupId, 
-            global::System.Nullable<global::System.DateTimeOffset> collectionDate)
+            global::System.DateTimeOffset collectionDate, 
+            global::System.Guid groupId)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "GroupId", groupId }, 
-                { "CollectionDate", collectionDate }
+                { "CollectionDate", collectionDate }, 
+                { "GroupId", groupId }
             };
             return new global::Data.Models.LimitStringDenormalizedSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1640,7 +1575,7 @@ namespace Data.Models
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.DataStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataString> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Models.DataStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataString> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Models.DataStringSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1648,16 +1583,16 @@ namespace Data.Models
         /// Get an entity of type global::Data.Models.DataString as global::Data.Models.DataStringSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
-        /// <param name="groupId">The value of groupId</param>
         /// <param name="collectionDate">The value of collectionDate</param>
+        /// <param name="groupId">The value of groupId</param>
         public static global::Data.Models.DataStringSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataString> source,
-            global::System.Nullable<global::System.Guid> groupId, 
-            global::System.DateTimeOffset collectionDate)
+            global::System.DateTimeOffset collectionDate, 
+            global::System.Nullable<global::System.Guid> groupId)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "GroupId", groupId }, 
-                { "CollectionDate", collectionDate }
+                { "CollectionDate", collectionDate }, 
+                { "GroupId", groupId }
             };
             return new global::Data.Models.DataStringSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1669,35 +1604,6 @@ namespace Data.Models
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::Data.Models.DataString> query = source.CastTo<global::Data.Models.DataString>();
             return new global::Data.Models.DataStringSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Get an entity of type global::Data.Models.LimitDecimal as global::Data.Models.LimitDecimalSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Models.LimitDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimal> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::Data.Models.LimitDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Data.Models.LimitDecimal as global::Data.Models.LimitDecimalSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="groupId">The value of groupId</param>
-        /// <param name="priority">The value of priority</param>
-        /// <param name="max">The value of max</param>
-        public static global::Data.Models.LimitDecimalSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimal> source,
-            global::System.Nullable<global::System.Guid> groupId, 
-            global::System.Nullable<int> priority, 
-            decimal max)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "GroupId", groupId }, 
-                { "Priority", priority }, 
-                { "Max", max }
-            };
-            return new global::Data.Models.LimitDecimalSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
     }
 }
@@ -1729,8 +1635,8 @@ namespace Data.Controllers
         /// <summary>
         /// There are no comments for Childs in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Controllers.GroupNameTree> Childs
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Controllers.GroupNameTree> Childs
         {
             get
             {
@@ -1745,7 +1651,7 @@ namespace Data.Controllers
                 return this._Childs;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Controllers.GroupNameTree> _Childs;
     }
     /// <summary>
@@ -1761,7 +1667,7 @@ namespace Data.Controllers
         /// Create a new GroupNameTree object.
         /// </summary>
         /// <param name="name">Initial value of Name.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static GroupNameTree CreateGroupNameTree(string name)
         {
             GroupNameTree groupNameTree = new GroupNameTree();
@@ -1771,8 +1677,8 @@ namespace Data.Controllers
         /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Name
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Name
         {
             get
             {
@@ -1786,15 +1692,15 @@ namespace Data.Controllers
                 this.OnPropertyChanged("Name");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private string _Name;
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
         /// There are no comments for Property Childs in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceCollection<global::Data.Controllers.GroupNameTree> Childs
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Data.Controllers.GroupNameTree> Childs
         {
             get
             {
@@ -1808,20 +1714,20 @@ namespace Data.Controllers
                 this.OnPropertyChanged("Childs");
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceCollection<global::Data.Controllers.GroupNameTree> _Childs = new global::Microsoft.OData.Client.DataServiceCollection<global::Data.Controllers.GroupNameTree>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnChildsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Data.Controllers.GroupNameTree> value);
         partial void OnChildsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// The value of the property is changed
         /// </summary>
         /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected virtual void OnPropertyChanged(string property)
         {
             if ((this.PropertyChanged != null))
@@ -1840,7 +1746,7 @@ namespace Data.Controllers
         /// </summary>
         /// <param name="source">source entity set</param>
         /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::Data.Controllers.GroupNameTreeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Controllers.GroupNameTree> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        public static global::Data.Controllers.GroupNameTreeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Controllers.GroupNameTree> source, global::System.Collections.Generic.IDictionary<string, object> keys)
         {
             return new global::Data.Controllers.GroupNameTreeSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
         }
@@ -1852,7 +1758,7 @@ namespace Data.Controllers
         public static global::Data.Controllers.GroupNameTreeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Controllers.GroupNameTree> source,
             string name)
         {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
                 { "Name", name }
             };
@@ -1870,7 +1776,7 @@ namespace Default
         /// <summary>
         /// Initialize a new Container object.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public Container(global::System.Uri serviceRoot) : 
                 base(serviceRoot, global::Microsoft.OData.Client.ODataProtocolVersion.V4)
         {
@@ -1885,7 +1791,7 @@ namespace Default
         /// in Visual Studio is different from the one indicated in the
         /// server schema, use type-mappers to map between the two.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected string ResolveNameFromType(global::System.Type clientType)
         {
             return clientType.FullName;
@@ -1893,8 +1799,8 @@ namespace Default
         /// <summary>
         /// There are no comments for Groups in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> Groups
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> Groups
         {
             get
             {
@@ -1905,13 +1811,13 @@ namespace Default
                 return this._Groups;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> _Groups;
         /// <summary>
         /// There are no comments for Datas in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> Datas
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> Datas
         {
             get
             {
@@ -1922,13 +1828,13 @@ namespace Default
                 return this._Datas;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Data> _Datas;
         /// <summary>
         /// There are no comments for DataDecimals in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> DataDecimals
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> DataDecimals
         {
             get
             {
@@ -1939,13 +1845,13 @@ namespace Default
                 return this._DataDecimals;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> _DataDecimals;
         /// <summary>
         /// There are no comments for LimitDecimalDenormalizeds in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimalDenormalized> LimitDecimalDenormalizeds
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimalDenormalized> LimitDecimalDenormalizeds
         {
             get
             {
@@ -1956,13 +1862,13 @@ namespace Default
                 return this._LimitDecimalDenormalizeds;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitDecimalDenormalized> _LimitDecimalDenormalizeds;
         /// <summary>
         /// There are no comments for LimitStringDenormalizeds in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitStringDenormalized> LimitStringDenormalizeds
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitStringDenormalized> LimitStringDenormalizeds
         {
             get
             {
@@ -1973,55 +1879,56 @@ namespace Default
                 return this._LimitStringDenormalizeds;
             }
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.LimitStringDenormalized> _LimitStringDenormalizeds;
         /// <summary>
         /// There are no comments for Groups in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToGroups(global::Data.Models.Group group)
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToGroups(global::Data.Models.Group group)
         {
             base.AddObject("Groups", group);
         }
         /// <summary>
         /// There are no comments for Datas in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToDatas(global::Data.Models.Data data)
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToDatas(global::Data.Models.Data data)
         {
             base.AddObject("Datas", data);
         }
         /// <summary>
         /// There are no comments for DataDecimals in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToDataDecimals(global::Data.Models.DataDecimal dataDecimal)
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToDataDecimals(global::Data.Models.DataDecimal dataDecimal)
         {
             base.AddObject("DataDecimals", dataDecimal);
         }
         /// <summary>
         /// There are no comments for LimitDecimalDenormalizeds in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToLimitDecimalDenormalizeds(global::Data.Models.LimitDecimalDenormalized limitDecimalDenormalized)
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToLimitDecimalDenormalizeds(global::Data.Models.LimitDecimalDenormalized limitDecimalDenormalized)
         {
             base.AddObject("LimitDecimalDenormalizeds", limitDecimalDenormalized);
         }
         /// <summary>
         /// There are no comments for LimitStringDenormalizeds in the schema.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public void AddToLimitStringDenormalizeds(global::Data.Models.LimitStringDenormalized limitStringDenormalized)
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToLimitStringDenormalizeds(global::Data.Models.LimitStringDenormalized limitStringDenormalized)
         {
             base.AddObject("LimitStringDenormalizeds", limitStringDenormalized);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private abstract class GeneratedEdmModel
         {
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
             private static global::Microsoft.OData.Edm.IEdmModel ParsedModel = LoadModelFromString();
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-            private const string Edmx = @"<edmx:Edmx Version=""4.0"" xmlns:edmx=""http://docs.oasis-open.org/odata/ns/edmx"">
+
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+                private const string Edmx = @"<edmx:Edmx Version=""4.0"" xmlns:edmx=""http://docs.oasis-open.org/odata/ns/edmx"">
   <edmx:DataServices>
     <Schema Namespace=""Data.Models"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EntityType Name=""Group"">
@@ -2033,17 +1940,17 @@ namespace Default
         <Property Name=""Initials"" Type=""Edm.String"" />
         <Property Name=""ParentId"" Type=""Edm.Guid"" />
         <Property Name=""MeasureUnit"" Type=""Edm.String"" />
+        <Property Name=""LimitDecimals"" Type=""Collection(Data.Models.LimitDecimal)"" />
         <NavigationProperty Name=""Parent"" Type=""Data.Models.Group"">
           <ReferentialConstraint Property=""ParentId"" ReferencedProperty=""Id"" />
         </NavigationProperty>
         <NavigationProperty Name=""Datas"" Type=""Collection(Data.Models.Data)"" />
         <NavigationProperty Name=""Childs"" Type=""Collection(Data.Models.Group)"" />
-        <NavigationProperty Name=""LimitDecimals"" Type=""Collection(Data.Models.LimitDecimal)"" />
       </EntityType>
       <EntityType Name=""Data"" Abstract=""true"">
         <Key>
-          <PropertyRef Name=""GroupId"" />
           <PropertyRef Name=""CollectionDate"" />
+          <PropertyRef Name=""GroupId"" />
         </Key>
         <Property Name=""GroupId"" Type=""Edm.Guid"" />
         <Property Name=""CollectionDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
@@ -2057,59 +1964,43 @@ namespace Default
       </EntityType>
       <EntityType Name=""LimitDecimalDenormalized"">
         <Key>
-          <PropertyRef Name=""GroupId"" />
           <PropertyRef Name=""CollectionDate"" />
+          <PropertyRef Name=""GroupId"" />
         </Key>
-        <Property Name=""GroupId"" Type=""Edm.Guid"" />
-        <Property Name=""CollectionDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""GroupId"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""CollectionDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
         <Property Name=""Name"" Type=""Edm.String"" />
         <Property Name=""MinType"" Type=""Data.Models.MinTypeEnum"" />
         <Property Name=""Min"" Type=""Edm.Decimal"" />
         <Property Name=""MaxType"" Type=""Data.Models.MaxTypeEnum"" />
         <Property Name=""Max"" Type=""Edm.Decimal"" />
         <Property Name=""Color"" Type=""Edm.Int32"" />
-        <NavigationProperty Name=""Data"" Type=""Data.Models.DataDecimal"">
-          <ReferentialConstraint Property=""GroupId"" ReferencedProperty=""GroupId"" />
-          <ReferentialConstraint Property=""CollectionDate"" ReferencedProperty=""CollectionDate"" />
-        </NavigationProperty>
+        <NavigationProperty Name=""Data"" Type=""Data.Models.DataDecimal"" />
       </EntityType>
       <EntityType Name=""LimitStringDenormalized"">
         <Key>
-          <PropertyRef Name=""GroupId"" />
           <PropertyRef Name=""CollectionDate"" />
+          <PropertyRef Name=""GroupId"" />
         </Key>
-        <Property Name=""GroupId"" Type=""Edm.Guid"" />
-        <Property Name=""CollectionDate"" Type=""Edm.DateTimeOffset"" />
+        <Property Name=""GroupId"" Type=""Edm.Guid"" Nullable=""false"" />
+        <Property Name=""CollectionDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
         <Property Name=""Expected"" Type=""Edm.String"" />
         <Property Name=""Color"" Type=""Edm.Int32"" />
-        <NavigationProperty Name=""Data"" Type=""Data.Models.DataString"">
-          <ReferentialConstraint Property=""GroupId"" ReferencedProperty=""GroupId"" />
-          <ReferentialConstraint Property=""CollectionDate"" ReferencedProperty=""CollectionDate"" />
-        </NavigationProperty>
+        <NavigationProperty Name=""Data"" Type=""Data.Models.DataString"" />
       </EntityType>
       <EntityType Name=""DataString"" BaseType=""Data.Models.Data"">
         <Property Name=""StringValue"" Type=""Edm.String"" Nullable=""false"" />
         <NavigationProperty Name=""LimitDenormalized"" Type=""Data.Models.LimitStringDenormalized"" />
       </EntityType>
-      <EntityType Name=""LimitDecimal"">
-        <Key>
-          <PropertyRef Name=""GroupId"" />
-          <PropertyRef Name=""Priority"" />
-          <PropertyRef Name=""Max"" />
-        </Key>
+      <ComplexType Name=""LimitDecimal"">
         <Property Name=""GroupId"" Type=""Edm.Guid"" />
-        <Property Name=""Priority"" Type=""Edm.Int32"" />
+        <Property Name=""Priority"" Type=""Edm.Int32"" Nullable=""false"" />
         <Property Name=""Max"" Type=""Edm.Decimal"" Nullable=""false"" />
         <Property Name=""Min"" Type=""Edm.Decimal"" />
         <Property Name=""Name"" Type=""Edm.String"" />
-        <NavigationProperty Name=""Last"" Type=""Data.Models.LimitDecimal"">
-          <ReferentialConstraint Property=""Priority"" ReferencedProperty=""Priority"" />
-          <ReferentialConstraint Property=""Min"" ReferencedProperty=""Max"" />
-        </NavigationProperty>
-        <NavigationProperty Name=""Group"" Type=""Data.Models.Group"">
-          <ReferentialConstraint Property=""GroupId"" ReferencedProperty=""Id"" />
-        </NavigationProperty>
-      </EntityType>
+        <Property Name=""Last"" Type=""Data.Models.LimitDecimal"" />
+        <NavigationProperty Name=""Group"" Type=""Data.Models.Group"" />
+      </ComplexType>
       <EnumType Name=""MinTypeEnum"">
         <Member Name=""BiggerThan"" Value=""1"" />
         <Member Name=""EqualsOrBiggerThan"" Value=""2"" />
@@ -2140,10 +2031,19 @@ namespace Default
         <Parameter Name=""RootPath"" Type=""Collection(Edm.String)"" />
         <ReturnType Type=""Collection(Data.Models.Group)"" />
       </Action>
+      <Function Name=""DecimalTotal"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.DataDecimal)"" />
+        <ReturnType Type=""Edm.String"" />
+      </Function>
+      <Function Name=""ChildsRecursively"" IsBound=""true"">
+        <Parameter Name=""bindingParameter"" Type=""Collection(Data.Models.Group)"" />
+        <ReturnType Type=""Edm.String"" />
+      </Function>
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Groups"" EntityType=""Data.Models.Group"">
           <NavigationPropertyBinding Path=""Childs"" Target=""Groups"" />
           <NavigationPropertyBinding Path=""Datas"" Target=""Datas"" />
+          <NavigationPropertyBinding Path=""LimitDecimals/Group"" Target=""Groups"" />
           <NavigationPropertyBinding Path=""Parent"" Target=""Groups"" />
         </EntitySet>
         <EntitySet Name=""Datas"" EntityType=""Data.Models.Data"">
@@ -2165,43 +2065,45 @@ namespace Default
     </Schema>
   </edmx:DataServices>
 </edmx:Edmx>";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
             public static global::Microsoft.OData.Edm.IEdmModel GetInstance()
             {
                 return ParsedModel;
             }
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
             private static global::Microsoft.OData.Edm.IEdmModel LoadModelFromString()
             {
-                global::System.Xml.XmlReader reader = CreateXmlReader(Edmx);
+                    global::System.Xml.XmlReader reader = CreateXmlReader(Edmx);
                 try
                 {
                     global::System.Collections.Generic.IEnumerable<global::Microsoft.OData.Edm.Validation.EdmError> errors;
                     global::Microsoft.OData.Edm.IEdmModel edmModel;
-                    
+
                     if (!global::Microsoft.OData.Edm.Csdl.CsdlReader.TryParse(reader, false, out edmModel, out errors))
                     {
-                        global::System.Text.StringBuilder errorMessages = new System.Text.StringBuilder();
-                        foreach (var error in errors)
-                        {
-                            errorMessages.Append(error.ErrorMessage);
-                            errorMessages.Append("; ");
-                        }
-                        throw new global::System.InvalidOperationException(errorMessages.ToString());
+	                    global::System.Text.StringBuilder errorMessages = new System.Text.StringBuilder();
+	                    foreach (var error in errors)
+	                    {
+		                    errorMessages.Append(error.ErrorMessage);
+		                    errorMessages.Append("; ");
+	                    }
+	                    throw new global::System.InvalidOperationException(errorMessages.ToString());
                     }
 
-                    return edmModel;
+        return edmModel;
                 }
                 finally
                 {
                     ((global::System.IDisposable)(reader)).Dispose();
                 }
             }
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
             private static global::System.Xml.XmlReader CreateXmlReader(string edmxToParse)
             {
                 return global::System.Xml.XmlReader.Create(new global::System.IO.StringReader(edmxToParse));
             }
+
         }
     }
     /// <summary>
@@ -2209,6 +2111,30 @@ namespace Default
     /// </summary>
     public static class ExtensionMethods
     {
+        /// <summary>
+        /// There are no comments for DecimalTotal in the schema.
+        /// </summary>
+        public static global::Microsoft.OData.Client.DataServiceQuerySingle<string> DecimalTotal(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.DataDecimal> source)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuerySingle<string>("Default.DecimalTotal", false);
+        }
+        /// <summary>
+        /// There are no comments for ChildsRecursively in the schema.
+        /// </summary>
+        public static global::Microsoft.OData.Client.DataServiceQuerySingle<string> ChildsRecursively(this global::Microsoft.OData.Client.DataServiceQuery<global::Data.Models.Group> source)
+        {
+            if (!source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return source.CreateFunctionQuerySingle<string>("Default.ChildsRecursively", false);
+        }
         /// <summary>
         /// There are no comments for BulkInsert in the schema.
         /// </summary>
@@ -2219,7 +2145,7 @@ namespace Default
                 throw new global::System.NotSupportedException("The previous function is not composable.");
             }
 
-            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Data>(source.Context, source.AppendRequestUri("BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Datas", Datas));
+            return new global::Microsoft.OData.Client.DataServiceActionQuery<global::Data.Models.Data>(source.Context, source.AppendRequestUri("Default.BulkInsert"), new global::Microsoft.OData.Client.BodyOperationParameter("Datas", Datas));
         }
         /// <summary>
         /// There are no comments for BulkInsertByName in the schema.
